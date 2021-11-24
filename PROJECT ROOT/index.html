@@ -5,31 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9f9be9c632.js" crossorigin="anonymous"></script>
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body id="page-home">
         <header> 
-            <div class="page-header-top container text-center text-md-start">
+            <div class="page-header-top text-center text-md-start">
                 <a href="index.html"><img src="./images/logo.jpg" alt="StudentEat"/></a>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
+            <nav class="navbar-brand navbar-expand-lg navbar-light">
+                <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">    
                     <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar">        
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
                             <li class="nav-item">            
-                                <a class="nav-link" href="index.html" >Home</a>          
+                                <a class="nav-link" href="index.html">Home</a>          
                             </li>          
                             <li class="nav-item">            
                                 <a class="nav-link" href="categories.html">Categories</a>          
                             </li>      
                             <li class="nav-item">            
-                                <a class="nav-link" href="login.html">Login</a>          
+                                <a class="nav-link" href="login-reg.html">Login</a>          
                             </li>    
                         </ul>
                         <form action="search.html" method="get" class="d-flex">
@@ -40,5 +40,21 @@
                 </div>
             </nav>
         </header>
+            <div class="container-fluid">
+                <h1 class="mb-4 pb-2">Welcome to StudentEat</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <p>Welcome to StudentEat! Where all of your food cravings will be found!</p>
+                    <p>The final week before Thanksgiving is go time. No more comparing pecan pie recipes; you're locking down the menu. So, what does America actually cook for the holiday? Here they are, the top Thanksgiving recipes from last year.</p>
+                    <a href="categories.html" class="btn btn-studenteat">Browse Recipes</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./images/plate.png" alt="Plate of food"/>
+                </div>
+            </div>
+        <footer class="container mt-4 text-center">
+            <p>&copy;StudentEat - Created for educational purposes</p>
+        </footer>
     </body>
 </html>

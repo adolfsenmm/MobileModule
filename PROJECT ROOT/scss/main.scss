@@ -3,12 +3,14 @@
 //abstract
 @import "abstracts/variables";
 //base
-
+@import "base/typography";
 //components
-
+@import "components/button";
+@import "components/recipe-card";
 //layout
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/footer";
 //pages
 
 //themes

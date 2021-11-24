@@ -17017,8 +17017,53 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+* {
+  font-family: 'Roboto'; }
+
+h1, .h1 {
+  font-weight: 100;
+  color: #FFF;
+  font-size: 2.2rem;
+  border-bottom: solid 2px #66d891; }
+
+p {
+  color: #FFF;
+  font-weight: 300;
+  line-height: 1.8rem; }
+
+.btn.btn-studenteat {
+  background-color: #66d891;
+  color: #393e4f; }
+
+.recipe-card {
+  margin: 0 10px 10px 0;
+  background-color: #FFF;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  text-align: center;
+  border: solid 1px #eaeaea;
+  border-radius: 3px; }
+  .recipe-card .recipe-card-image {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .recipe-card .recipe-card-image a {
+      display: block;
+      height: 200px; }
+  .recipe-card a {
+    color: #393e4f;
+    text-decoration: none; }
+    .recipe-card a h3, .recipe-card a .h3 {
+      font-size: 1.1rem;
+      padding-top: 10px;
+      margin: 0; }
+
 header .page-header-top {
-  padding: 40px 40px 40px 0; }
+  padding: 40px 0 40px 0; }
   header .page-header-top img {
     max-width: 200px; }
 
@@ -17032,10 +17077,14 @@ header nav {
     color: #393e4f; }
   header nav .navbar-brand {
     font-family: 'Bangers', cursive; }
-  header nav ul li a i {
-    margin-right: 2px; }
+
+footer p {
+  font-size: 0.9rem; }
 
 body {
   background-color: #393e4f; }
+
+img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
