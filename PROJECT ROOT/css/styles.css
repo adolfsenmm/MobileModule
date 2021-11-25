@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url(.../node_modules/lightbox2/dist/css/lightbox.min.css);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -17033,10 +17034,11 @@ p {
 
 .btn.btn-studenteat {
   background-color: #66d891;
-  color: #393e4f; }
+  color: #393e4f;
+  margin-top: 30px; }
 
 .recipe-card {
-  margin: 0 10px 10px 0;
+  margin: 0 0 30px 0;
   background-color: #FFF;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 12px;
@@ -17080,6 +17082,42 @@ header nav {
 
 footer p {
   font-size: 0.9rem; }
+
+body#page-login form label {
+  color: #FFF; }
+body#page-login form#registration-form {
+  background-color: #66d891;
+  padding: 10px;
+  border-radius: 3px; }
+  body#page-login form#registration-form label {
+    color: #393e4f; }
+  body#page-login form#registration-form .btn {
+    background-color: #FFF;
+    margin-top: 30px;
+    color: #393e4f;
+    border: 0; }
+
+body#page-recipe .recipe-image {
+  border: solid 3px #FFF;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  body#page-recipe .recipe-image a {
+    display: block;
+    height: 150px; }
+body#page-recipe .recipe-features {
+  list-style: none;
+  padding: 0;
+  color: #FFF; }
+  body#page-recipe .recipe-features li {
+    margin-bottom: 10px; }
+    body#page-recipe .recipe-features li i {
+      text-align: center;
+      width: 27px; }
 
 body {
   background-color: #393e4f; }

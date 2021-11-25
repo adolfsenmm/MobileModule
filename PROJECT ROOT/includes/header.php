@@ -10,7 +10,7 @@
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
-    <body id="page-recipe">
+    <body id="page-<?php echo $page;?>">
         <header> 
             <div class="page-header-top text-center text-md-start">
                 <a href="index.html"><img src="./images/logo.jpg" alt="StudentEat"/></a>
@@ -23,14 +23,20 @@
                     <div class="collapse navbar-collapse" id="navbar">        
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
                             <li class="nav-item">            
-                                <a class="nav-link" href="index.html">Home</a>          
+                                <a class="nav-link" href="index.php?p=home">Home</a>          
                             </li>          
                             <li class="nav-item">            
-                                <a class="nav-link" href="categories.html">Categories</a>          
+                                <a class="nav-link" href="index.php?p=categories">Categories</a>          
                             </li>      
-                            <li class="nav-item">            
-                                <a class="nav-link" href="login-reg.html">Login</a>          
-                            </li>    
+                            <?php if($_SESSION['is_loggedin']) { ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php?p=logout">Logout</a>
+                                </li>
+                            <?php }else{ ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php?p=login">Login / Register</a>
+                                </li>
+                            <?php } ?>   
                         </ul>
                         <form action="search.html" method="get" class="d-flex">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -40,11 +46,3 @@
                 </div>
             </nav>
         </header>
-            <div class="container-fluid">
-                <h1 class="mb-4 pb-2">Crunchy Salad</h1>
-            </div>
-        <footer class="container mt-4 text-center">
-            <p>&copy;StudentEat - Created for educational purposes</p>
-        </footer>
-    </body>
-</html>
