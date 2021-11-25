@@ -2,7 +2,7 @@
     class User {
         protected $Conn;
 
-        public function_contruct($Conn) {
+        public function _construct($Conn) {
             $this->Conn=$Conn;
         }
         public function createUser($user_data) {

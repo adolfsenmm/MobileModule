@@ -80,7 +80,7 @@
             }else{
                 ?>
                 <div class="alert alert-danger" role="alert">
-                    An error occured, please try again later.
+                    An error occurred, please try again later.
                 </div>
                 <?php
             }
