@@ -2,7 +2,7 @@
     class Category{
         protected $Conn;
 
-        public function_construct($Conn){
+        public function _construct($Conn){
             $this->Conn = $Conn;
         }
         public function getAllCategories(){
