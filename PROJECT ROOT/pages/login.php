@@ -60,7 +60,6 @@
                 }
             }
         }
-        // below: should this be moved up into register block?
         if($error) {
         ?>
             <div class="alert alert-danger" role="alert">
