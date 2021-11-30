@@ -10,5 +10,4 @@
     }
     require_once(__DIR__.'/includes/header.php');
     require_once(__DIR__.'/pages/'.$page.'.php');
-    require_once(__DIR__.'/pages/login.php');
     require_once(__DIR__.'/includes/footer.php');    
