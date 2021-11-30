@@ -2,7 +2,7 @@
     class Recipe{
         protected $Conn;
 
-        public function _construct($Conn){
+        public function __construct($Conn){
             $this->Conn = $Conn;
         }
         public function getAllRecipes($category_id){

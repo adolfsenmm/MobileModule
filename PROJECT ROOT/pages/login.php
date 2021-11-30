@@ -11,7 +11,7 @@
                     $error = "Password not set";
                 }elseif(!$_POST['password_confirm']) {
                     $error = "Confirm password not set";
-                }elseif(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
+                }elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                     $error="Email address is not valid";
                 }elseif($_POST['password'] !== $_POST['password_confirm']) {
                     $error = "Password and Confirm Password do not match";
@@ -26,7 +26,7 @@
                     $error = "Password not set";
                 }elseif(!$_POST['password_confirm']) {
                     $error = "Confirm password not set";
-                }elseif(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
+                }elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                     $error="Email address is not valid";
                 }elseif(strlen($_POST['password'])<8) {
                     $error = "Password must be at least 8 characters in length";
@@ -95,7 +95,7 @@
                                 <label for="login_password">Password</label>
                                 <input type="password" class="form-control" id="login_password" name="password">
                             </div>
-                            <button type="submit" name="login" value="1" class="btn btn-studenteat">Login</button>
+                            <button type="submit" name="login" value="1" class="btn btn-tailsandtrails">Login</button>
                         </form>
                     </div>
                     <div class="col">

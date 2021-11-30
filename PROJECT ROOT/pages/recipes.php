@@ -1,8 +1,7 @@
 <?php
-$Recipe = new Recipe($Conn);
-$recipes = $Recipe->getAllRecipes();
-$category_id = $_GET['id'];
-$Recipe->getAllRecipes($category_id);
+    $category_id = $_GET['id'];
+    $Recipe=new Recipe($Conn);
+    $recipes = $Recipe->getAllRecipes($category_id);
 ?>
 <div class="container-fluid">
                 <h1 class="mb-4 pb-2">Lunch Recipes</h1>
