@@ -5,15 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9f9be9c632.js" crossorigin="anonymous"></script>
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
     <body id="page-<?php echo $page;?>">
         <header> 
-            <div class="page-header-top text-center text-md-start">
-                <a href="index.html"><img src="./images/logo.jpg" alt="StudentEat"/></a>
+            <div class="page-header-top text-center">
+                <a href="index.php?p=home"><img src="./images/logo.png" alt="TailsAndTrails"/></a>
             </div>
             <nav class="navbar-brand navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -26,8 +26,11 @@
                                 <a class="nav-link" href="index.php?p=home">Home</a>          
                             </li>          
                             <li class="nav-item">            
-                                <a class="nav-link" href="index.php?p=categories">Categories</a>          
+                                <a class="nav-link" href="index.php?p=categories">Breeds</a>          
                             </li>      
+                            <li class="nav-item">            
+                                <a class="nav-link" href="index.php?p=map">Map</a>          
+                            </li>   
                             <?php if($_SESSION['is_loggedin']) { ?>
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.php?p=logout">Logout</a>
@@ -46,3 +49,4 @@
                 </div>
             </nav>
         </header>
+

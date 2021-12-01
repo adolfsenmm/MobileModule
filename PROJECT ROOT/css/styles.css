@@ -17019,23 +17019,24 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 * {
-  font-family: 'Roboto'; }
+  font-family: 'Outfit'; }
 
 h1, .h1 {
   font-weight: 100;
-  color: #FFF;
-  font-size: 2.2rem;
-  border-bottom: solid 2px #66d891; }
+  color: #000;
+  font-size: 2.2rem; }
 
 p {
-  color: #FFF;
+  color: #000;
   font-weight: 300;
-  line-height: 1.8rem; }
+  line-height: 1.8rem;
+  margin-left: 20px; }
 
 .btn.btn-tailsandtrails {
-  background-color: #66d891;
-  color: #393e4f;
-  margin-top: 30px; }
+  background-color: #f6d180;
+  color: #FFFFFF;
+  margin-top: 30px;
+  margin-left: 20px; }
 
 .recipe-card {
   margin: 0 0 30px 0;
@@ -17057,7 +17058,7 @@ p {
       display: block;
       height: 200px; }
   .recipe-card a {
-    color: #393e4f;
+    color: #FFFFFF;
     text-decoration: none; }
     .recipe-card a h3, .recipe-card a .h3 {
       font-size: 1.1rem;
@@ -17070,7 +17071,7 @@ header .page-header-top {
     max-width: 200px; }
 
 header nav {
-  background-color: #66d891; }
+  background-color: #f6d180; }
   header nav a,
   header nav a:hover,
   header nav a:active {
@@ -17086,15 +17087,15 @@ footer p {
 body#page-login form label {
   color: #FFF; }
 body#page-login form#registration-form {
-  background-color: #66d891;
+  background-color: #f6d180;
   padding: 10px;
   border-radius: 3px; }
   body#page-login form#registration-form label {
-    color: #393e4f; }
+    color: #FFFFFF; }
   body#page-login form#registration-form .btn {
     background-color: #FFF;
     margin-top: 30px;
-    color: #393e4f;
+    color: #FFFFFF;
     border: 0; }
 
 body#page-recipe .recipe-image {
@@ -17120,7 +17121,7 @@ body#page-recipe .recipe-features {
       width: 27px; }
 
 body {
-  background-color: #393e4f; }
+  background-color: #FFFFFF; }
 
 img {
   max-width: 100%; }
