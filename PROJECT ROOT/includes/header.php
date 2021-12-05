@@ -15,38 +15,42 @@
             <div class="page-header-top text-center">
                 <a href="index.php?p=home"><img src="./images/logo.png" alt="TailsAndTrails"/></a>
             </div>
-            <nav class="navbar-brand navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">    
-                    <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar">        
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
-                            <li class="nav-item">            
-                                <a class="nav-link" href="index.php?p=home">Home</a>          
-                            </li>          
-                            <li class="nav-item">            
-                                <a class="nav-link" href="index.php?p=categories">Breeds</a>          
-                            </li>      
-                            <li class="nav-item">            
-                                <a class="nav-link" href="index.php?p=map">Map</a>          
-                            </li>   
-                            <?php if($_SESSION['is_loggedin']) { ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.php?p=logout">Logout</a>
-                                </li>
-                            <?php }else{ ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.php?p=login">Login / Register</a>
-                                </li>
-                            <?php } ?>   
-                        </ul>
-                        <form action="search.html" method="get" class="d-flex">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-dark ms-2" type="submit">Search</button>       
-                        </form>
+            <nav class="sticky navbar navbar-expand-lg">
+                    <div class="container-fluid navbar-brand">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">    
+                        <i class="fas fa-bars"></i>
+                        </button>
+                       <div class="collapse navbar-collapse" id="navbar">        
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
+                                <li class="nav-item active">            
+                                    <a class="nav-link" href="index.php?p=home">Home <span class="sr-only">(current)</span></a>          
+                                </li>          
+                                <li class="nav-item">            
+                                    <a class="nav-link" href="index.php?p=categories">Breeds</a>          
+                                </li>     
+                                <li class="nav-item">            
+                                    <a class="nav-link" href="index.php?p=events">Events</a>          
+                                </li>    
+                                <li class="nav-item">            
+                                    <a class="nav-link" href="index.php?p=map">Map</a>          
+                                </li>   
+                                <?php if($_SESSION['is_loggedin']) { ?>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.php?p=logout">Logout</a>
+                                    </li>
+                                <?php }else{ ?>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.php?p=login">Login / Register</a>
+                                    </li>
+                                <?php } ?>   
+                            </ul>
+                            <form action="search.html" method="get" class="d-flex">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light ms-2" type="submit">Search</button>       
+                            </form>
+                        </div>
                     </div>
-                </div>
             </nav>
         </header>
+
 

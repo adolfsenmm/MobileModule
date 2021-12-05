@@ -17024,7 +17024,9 @@ textarea.form-control-lg {
 h1, .h1 {
   font-weight: 100;
   color: #000;
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 30px; }
 
 p {
   color: #000;
@@ -17038,29 +17040,34 @@ p {
   margin-top: 30px;
   margin-left: 20px; }
 
-.recipe-card {
-  margin: 0 0 30px 0;
+.dog-card {
+  margin: 0 0 40px 0;
   background-color: #FFF;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 12px;
   text-align: center;
   border: solid 1px #eaeaea;
   border-radius: 3px; }
-  .recipe-card .recipe-card-image {
-    height: 400px;
+  .dog-card .dog-card-image {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-    .recipe-card .recipe-card-image a {
+    .dog-card .dog-card-image a {
       display: block;
       height: 200px; }
-  .recipe-card a {
+  .dog-card a {
     color: #FFFFFF;
     text-decoration: none; }
-    .recipe-card a h3, .recipe-card a .h3 {
+    .dog-card a h3, .dog-card a .h3 {
+      color: #000;
       font-size: 1.1rem;
       padding-top: 10px;
       margin: 0; }
@@ -17069,17 +17076,26 @@ header .page-header-top {
   padding: 40px 0 40px 0; }
   header .page-header-top img {
     max-width: 200px; }
+header .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
 
 header nav {
-  background-color: #f6d180; }
+  background-color: #56876D; }
   header nav a,
-  header nav a:hover,
-  header nav a:active {
+  header nav a:hover {
+    text-decoration: underline; }
+  header nav a:active
+  ul li a i {
+    margin-right: 2px; }
+  header nav .nav-link {
+    color: #FFF;
     text-transform: uppercase;
-    font-weight: 500;
-    color: #393e4f; }
-  header nav .navbar-brand {
-    font-family: 'Bangers', cursive; }
+    font-weight: 200; }
+    header nav .nav-link:hover {
+      color: #FFF;
+      text-decoration: underline; }
 
 footer p {
   font-size: 0.9rem; }
@@ -17119,6 +17135,17 @@ body#page-recipe .recipe-features {
     body#page-recipe .recipe-features li i {
       text-align: center;
       width: 27px; }
+
+body#page-home .homepageimage {
+  border-radius: 50%;
+  height: 80%;
+  padding: 30px; }
+body#page-home img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+body#page-home .homepagepadding {
+  padding-top: 50px; }
 
 body {
   background-color: #FFFFFF; }

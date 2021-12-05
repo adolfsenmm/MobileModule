@@ -1,0 +1,17 @@
+body{
+    &#page-home {
+        .homepageimage {
+            border-radius: 50%;
+            height: 80%;
+            padding: 30px;
+        }
+        img.sticky {
+            position:-webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+        .homepagepadding {
+            padding-top: 50px;
+        }
+    }
+}

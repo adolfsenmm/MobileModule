@@ -1,7 +1,7 @@
 <?php
 define("DB_HOST", "localhost");
-define("DB_NAME", "maren_recipes");
-define("DB_USER", "maren123");
+define("DB_NAME", "maren_dogs");
+define("DB_USER", "maren_dogs");
 define("DB_PASS", "maren123");
 
 try {

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <h1 class="mb-4 pb-2">Login or Register</h1>
+    
     <?php
         $User = new User($Conn);
         if($_POST) {
@@ -18,6 +18,33 @@
                 }elseif(strlen($_POST['password'])<8) {
                     $error = "Password must be at least 8 characters in length";
                 }
+                if($error) {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php echo $error; ?>
+                        </div>
+                    <?php
+                    }else{
+                        //Register User
+                        $attempt = $User->createUser($_POST);
+            
+                        if($attempt) {
+                            ?>
+                            <div class="alert alert-success" role="alert">
+                                User created - Please Login!
+                            </div>
+                        <?php
+                        }else{
+                            ?>
+                            <div class="alert alert-danger" role="alert">
+                                An error occurred, please try again later.
+                            </div>
+                            <?php
+                        }
+                    }
+                }
+            
+            
             }else if($_POST['login']) {
                 //Login form submitted
                 if(!$_POST['email']) {
@@ -59,31 +86,8 @@
                     }
                 }
             }
-        }
-        if($error) {
         ?>
-            <div class="alert alert-danger" role="alert">
-                <?php echo $error; ?>
-            </div>
-        <?php
-        }else{
-            //Register User
-            $attempt = $User->createUser($_POST);
-
-            if($attempt) {
-                ?>
-                <div class="alert alert-success" role="alert">
-                    User created - Please Login!
-                </div>
-            <?php
-            }else{
-                ?>
-                <div class="alert alert-danger" role="alert">
-                    An error occurred, please try again later.
-                </div>
-                <?php
-            }
-        }?>
+        <h1 class="mb-4 pb-2">Login or Register</h1>
                 <div class="row">
                     <div class="col">
                         <form id="login-form" method="post" action="">

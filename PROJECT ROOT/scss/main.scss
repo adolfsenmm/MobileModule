@@ -7,7 +7,7 @@
 @import "base/typography";
 //components
 @import "components/button";
-@import "components/recipe-card";
+@import "components/dog-card";
 //layout
 @import "layout/header";
 @import "layout/navigation";
@@ -15,6 +15,7 @@
 //pages
 @import "pages/login";
 @import "pages/recipe";
+@import "pages/home";
 //themes
 @import "themes/theme";
 

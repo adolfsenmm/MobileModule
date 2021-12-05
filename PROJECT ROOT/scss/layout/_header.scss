@@ -1,8 +1,13 @@
 header {    
     .page-header-top {        
-        padding: 40px 0 40px 0;        
+        padding: 40px 0 40px 0;       
         img {            
             max-width: 200px;        
-        }    
-    }
+        } 
+    }    
+    .sticky {
+        position:-webkit-sticky;
+        position:sticky;
+        top:0;
+        }
 }
