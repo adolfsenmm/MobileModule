@@ -19,7 +19,7 @@
                                     $user_favs = $Favourite->getAllFavouritesForUser();
                                     if($user_favs) {
                                         foreach($user_favs as $fav) {
-                                            echo '<li><a class="accordion-body" href="index.php?p=breeds&id='.$fav['breed_id'].'">'.$fav['dog_breed'].'</a></li>';
+                                            echo '<li><a class="accordion-body" href="index.php?p=dog&id='.$fav['dog_id'].'">'.$fav['dog_breed'].'</a></li>';
                                         }
                                     }
                                 ?>
