@@ -29,32 +29,4 @@ if($_SESSION['user_data']){
         "success" => false,
         "reason" => "User not logged in."
     ));
-};
-if($_SESSION['user_data']){
-    $events_id = (int) $_POST['events_id'];
-        if($events_id){
-            $Favorite = new Favorite($Conn);
-            $toggle = $Favorite->toggleFavorite($_POST['events_id']);
-            if($toggle) {
-                echo json_encode(array(
-                    "success" => true,
-                    "reason" => "This event was added to users favourites."
-                ));
-            }else{
-                echo json_encode(array(
-                    "success" => true,
-                    "reason" => "This event was removed from users favourites."
-                ));
-            }
-        }else{
-            echo json_encode(array(
-                "success" => false,
-                "reason" => "Event ID not provided."
-            ));
-        }
-}else{
-    echo json_encode(array(
-        "success" => false,
-        "reason" => "User not logged in."
-    ));
 }
