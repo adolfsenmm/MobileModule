@@ -1,12 +1,12 @@
 $(function() {
     $('body').on('click', '#addFav', function(e) {
-        var breed_id = $(this).data('breedid');
+        var dog_id = $(this).data('dogid');
 
         $.ajax({
             method: "POST",
             url: "./ajax/togglefav.php",
             dataType: 'json',
-            data: { breed_id: breed_id }
+            data: { dog_id: dog_id }
         })
         .done(function( rtnData ) {
             console.log(rtnData);
@@ -14,13 +14,13 @@ $(function() {
         });
     });
     $('body').on('click', '#removeFav', function(e) {
-        var breed_id = $(this).data('breedid');
+        var dog_id = $(this).data('dogid');
 
         $.ajax({
             method: "POST",
             url: "./ajax/togglefav.php",
             dataType: 'json',
-            data: { breed_id: breed_id }
+            data: { dog_id: dog_id }
         })
         .done(function( rtnData ) {
             console.log(rtnData);

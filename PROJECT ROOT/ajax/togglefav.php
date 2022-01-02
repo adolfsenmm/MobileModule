@@ -3,10 +3,10 @@ session_start();
 require_once(__DIR__.'/../includes/autoloader.php');
 require_once(__DIR__.'/../includes/database.php');
 if($_SESSION['user_data']){
-    $breed_id = (int) $_POST['breed_id'];
-        if($breed_id){
+    $dog_id = (int) $_POST['dog_id'];
+        if($dog_id){
             $Favourite = new Favourite($Conn);
-            $toggle = $Favourite->toggleFavourite($_POST['breed_id']);
+            $toggle = $Favourite->toggleFavourite($_POST['dog_id']);
             if($toggle) {
                 echo json_encode(array(
                     "success" => true,

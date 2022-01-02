@@ -23,18 +23,19 @@ $dogs = $Dog->getAllDogs($dog_id);
                     <li><i class="fas fa-cut"></i> Grooming: <?php echo $dogs[0]['dog_grooming']; ?></li>
                 </ul>
                 <?php 
-                    $Favourite = new Favourite($Conn);
-                    $is_fav = $Favourite->isFavourite($_GET['id']);
-                        if($is_fav) {
-                        ?>
-                            <button id="removeFav" type="button" class="btn btn-tailsandtrails mb-3" data-dogid="<?php echo $_GET['id']; ?>">Remove from favourites</button>
-                        <?php
-                        }else{
-                        ?>
-                            <button id="addFav" type="button" class="btn btn-tailsandtrails mb-3" data-dogid="<?php echo $_GET['id']; ?>">Add to favourites</button>
-                        <?php
-                        }
-                        ?>
+                $Favourite = new Favourite($Conn);
+                $is_fav = $Favourite->isFavourite($_GET['id']);
+                
+                if($is_fav) {
+                ?>
+                    <button id="removeFav" type="button" class="btn btn-tailsandtrails mb-3" data-dogid="<?php echo $_GET['id']; ?>">Remove from favourites</button>
+                <?php
+                }else{
+                ?>
+                    <button id="addFav" type="button" class="btn btn-tailsandtrails mb-3" data-dogid="<?php echo $_GET['id']; ?>">Add to favourites</button>
+                <?php
+                }
+                ?>
         </div>
            <!-- this could be an area where you allow users to upload their own pictures of the breed
             <div class="row">
