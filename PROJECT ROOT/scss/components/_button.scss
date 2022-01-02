@@ -1,0 +1,23 @@
+.btn.btn-tailsandtrails {
+    background-color: $third-color;
+    color: #FFF;
+    transition-duration: 0.4s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19);
+    &:hover {
+        background-color: #53857e;
+        color: white;
+        }
+    }
+.btn.btn-tailsandtrails2 {
+    background-color: $third-color;
+    color: #FFF;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19);
+    &:hover {
+        background-color: #53857e;
+        color: white;
+        }
+    }
+
+

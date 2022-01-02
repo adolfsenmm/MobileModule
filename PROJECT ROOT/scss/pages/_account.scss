@@ -1,0 +1,23 @@
+body#page-account {
+    .accordion-button {
+        background-color: $third-color;
+        color: #FFF;
+    }
+    li a {
+        color: $third-color;
+        text-decoration: none;
+        list-style-type: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    h2 {
+        font-size: 1.2rem;
+        color: #000;
+        line-height: 1.8rem;
+        margin-right: auto;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}

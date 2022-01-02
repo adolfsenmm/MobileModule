@@ -1,0 +1,22 @@
+body#page-login {
+    form {
+        label {
+            color:#000;
+        }
+        &#registration-form {
+            background-color: $secondary-color;
+            padding: 10px;
+            border-radius: 3px;
+            label {
+                color: $primary-color;
+            }
+
+            .btn {
+                background-color: #FFF;
+                margin-top: 30px;
+                color: rgba(71, 70, 70, 0.911);
+                border: 0;
+            }
+        }
+    }
+}

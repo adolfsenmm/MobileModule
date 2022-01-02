@@ -1,0 +1,29 @@
+header {
+    nav {        
+        padding-bottom: 50px;
+
+        a,
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active
+
+        ul li a i {
+            margin-left: 2px;
+            text-align: center;
+        }
+
+        .nav-link {
+            color: $third-color;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 200;
+            padding-left: 10px;
+            &:hover {
+                color:$third-color;
+                text-decoration: underline;
+            }
+            
+        }
+    }
+}
