@@ -11,22 +11,21 @@
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
     <body id="page-<?php echo $page;?>">
+    <div class="box container">
         <header> 
-            <div class="page-header-top text-center">
-                <a href="index.php?p=home"><img src="./images/logo.png" alt="TailsAndTrails"/></a>
-            </div>
-            <nav class="sticky navbar navbar-expand-lg">
-                    <div class="container-fluid navbar-brand">
+            <nav class="navbar navbar-expand-lg">
+                    <div class="container center navbar-brand" >
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">    
                         <i class="fas fa-bars"></i>
                         </button>
-                       <div class="collapse navbar-collapse" id="navbar">        
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
+                       <div class="collapse navbar-collapse page-header-top" id="navbar"> 
+                            <a href="index.php?p=home"><img src="./images/logo.png" alt="TailsAndTrails"/></a>      
+                            <ul class="navbar-nav navbar-center mx-auto mb-2">        
                                 <li class="nav-item active">            
-                                    <a class="nav-link" href="index.php?p=home">Home <span class="sr-only">(current)</span></a>          
+                                    <a class="nav-link" href="index.php?p=home">Home<span class="sr-only"></span></span></a>          
                                 </li>          
                                 <li class="nav-item">            
-                                    <a class="nav-link" href="index.php?p=categories">Breeds</a>          
+                                    <a class="nav-link" href="index.php?p=breeds">Breeds</a>          
                                 </li>     
                                 <li class="nav-item">            
                                     <a class="nav-link" href="index.php?p=events">Events</a>          
@@ -34,23 +33,29 @@
                                 <li class="nav-item">            
                                     <a class="nav-link" href="index.php?p=map">Map</a>          
                                 </li>   
+                                <li class="nav-item">            
+                                    <a class="nav-link" href="index.php?p=api">API</a>          
+                                </li> 
                                 <?php if($_SESSION['is_loggedin']) { ?>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.php?p=account">My Account</a>
+                                    </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="index.php?p=logout">Logout</a>
                                     </li>
                                 <?php }else{ ?>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index.php?p=login">Login / Register</a>
+                                        <a class="nav-link" href="index.php?p=login">Sign Up / Login</a>
                                     </li>
                                 <?php } ?>   
                             </ul>
-                            <form action="search.html" method="get" class="d-flex">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-light ms-2" type="submit">Search</button>       
+                            <form id="searchbox" action="index.php?p=search" method="post" class="d-flex">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+                                <button class="btn btn-tailsandtrails2 ms-2 fa fa-search" type="submit"></button>       
                             </form>
                         </div>
                     </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
 
 

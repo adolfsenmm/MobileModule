@@ -13,4 +13,12 @@
             ]);
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
+        public function searchDogs($query_string) {
+            $query = "SELECT * FROM dog_page WHERE dog_breed LIKE :query_string";
+            $stmt = $this->Conn->prepare($query);
+            $stmt -> execute([
+                "query_string" => "%".$query_string."%"
+            ]);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
     }

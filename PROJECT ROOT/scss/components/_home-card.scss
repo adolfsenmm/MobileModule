@@ -1,0 +1,37 @@
+.home-card {
+    margin: 5% 0 5% 0;
+    background-color: #FFF;
+    padding: 12px;
+    text-align: center;
+
+    .home-card-image {
+        height: 500px;
+        width: 400px;
+        border-radius: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        //object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+       /* -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; */
+    
+        a {
+            display:block;
+            height: 500px;
+        }
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        h3 {
+            color: #000;
+            font-size: 1.1rem;
+            padding-top: 10px;
+            margin: 0;
+        }
+    }
+}

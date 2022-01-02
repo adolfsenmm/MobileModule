@@ -3,6 +3,7 @@
         "autoloader",
         "classname",
         "homepagepadding",
-        "loggedin"
+        "loggedin",
+        "tailsandtrails"
     ]
 }

@@ -1,6 +1,18 @@
-body {    
-    background-color: $primary-color;
-}
-img {
-    max-width: 100%;
+body { 
+    background-image: url('../images/back.jpeg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding-top: 120px;
+
+    .box {
+        background-color:#FFF;
+        box-sizing: border-box;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 100px;
+        padding: 25px;
+        border: 5px solid #FFF;
+        border-radius: 3px;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 10%);
+    }
 }

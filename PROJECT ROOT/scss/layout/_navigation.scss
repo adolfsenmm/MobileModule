@@ -1,6 +1,6 @@
 header {
     nav {        
-        background-color: $lightgreen-color;
+        padding-bottom: 50px;
 
         a,
         a:hover {
@@ -9,15 +9,18 @@ header {
         a:active
 
         ul li a i {
-            margin-right: 2px;
+            margin-left: 2px;
+            text-align: center;
         }
 
         .nav-link {
-            color: #FFF;
+            color: $third-color;
+            font-size: 1.3rem;
             text-transform: uppercase;
             font-weight: 200;
+            padding-left: 10px;
             &:hover {
-                color:#FFF;
+                color:$third-color;
                 text-decoration: underline;
             }
             

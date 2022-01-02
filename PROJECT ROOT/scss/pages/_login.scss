@@ -1,7 +1,7 @@
 body#page-login {
     form {
         label {
-            color:#FFF;
+            color:#000;
         }
         &#registration-form {
             background-color: $secondary-color;
@@ -14,7 +14,7 @@ body#page-login {
             .btn {
                 background-color: #FFF;
                 margin-top: 30px;
-                color: $primary-color;
+                color: rgba(71, 70, 70, 0.911);
                 border: 0;
             }
         }

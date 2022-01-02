@@ -1,0 +1,29 @@
+body#page-dog {   
+    .dog-card-image {
+        height: 550px;
+        width: 550px;
+        margin-left: auto;
+        margin-top: -110px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .dog-features {
+        list-style: none;
+        padding: 2%;
+        color: #000;
+
+        li {
+            margin-bottom: 10px;
+
+            i {
+                text-align: center;
+                width: 27px;
+            }
+        }
+    }
+}
