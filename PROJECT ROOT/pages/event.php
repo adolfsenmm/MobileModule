@@ -17,7 +17,6 @@ $occasions = $Occasion->getAllOccasions($events_id);
                     <ul class="occasion-features">
                         <li> Dates: <?php echo $occasions[0]['event_date']; ?></li>
                         <li> Location: <?php echo $occasions[0]['event_location']; ?></li>
-                        <li> Ratings: </li>
                     </ul>
             </div>
      </div>
