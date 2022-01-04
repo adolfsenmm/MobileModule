@@ -1,2 +1,2 @@
-# MobileModule
-Activities from Multimedia Mobile and Internet module
+# MobileModule Assignment
+A dog breed website
