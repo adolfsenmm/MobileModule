@@ -35,7 +35,7 @@
                     </div>
                 <?php
                     require_once (__DIR__.'/../api/config.php');
-                    require_once (__DIR__.'/../api/vendor/autoload.php');
+                    require_once (__DIR__.'/../vendor/autoload.php');
         
                     $email = new \SendGrid\Mail\Mail(); 
                     $email->setFrom("m.adolfsen@uos.ac.uk", "Tails and Trails");
@@ -43,7 +43,7 @@
                     $email->addTo($_POST['email'], "User");
                     $email->addContent("text/plain", "Welcome to Tails and Trails!");
                     $email->addContent(
-                        "text/html", "<strong>Where you can start searching for your new PAWsible family member!</strong>"
+                        "text/html", "<strong>Welcome to Tails and Trails! Where you can start searching for your new PAWsible family member!</strong>"
                     );
                     $sendgrid = new \SendGrid( SENDGRID_API_KEY ); 
                     $response = $sendgrid->send($email);
